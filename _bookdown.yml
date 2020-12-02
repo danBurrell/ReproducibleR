@@ -2,9 +2,13 @@ book_filename: "ReproducibleR"
 chapter_name: "Chapter "
 repo: https://github.com/danBurrell/ReproducibleR
 output_dir: docs
-rmd_files: ["index.Rmd", "01-theGolemOfPrague.Rmd",
-"02-SmallWorldsAndLargeWorlds.Rmd",
-"03-samplingTheImaginary.Rmd"]
+rmd_files: ["index.Rmd", "01-Intro_to_R.Rmd",
+"02-Data_input_and_exploration.Rmd",
+"03-Publishable_graphics_with_ggplot2.Rmd", 
+"04-Efficient_Computing_Functions_and_Vectorization.Rmd",
+"05-Data_Manipulation.Rmd", 
+"06-Reproducible_Reports_with_knitr.Rmd", 
+"07-Tips_on_writing_good_code.Rmd"]
 clean: [packages.bib, bookdown.bbl]
 new_session: yes
 delete_merged_file: true
