@@ -12,11 +12,6 @@ Science is a multifaceted process that involves designing experiments or observa
 
 ## Introduction to RStudio
 
-<!---LEARNR EX 1-->
-
-<iframe style="margin:0 auto; min-width: 100%;" id="myIframe1" class="interactive" src="https://mylearnrapp.shinyapps.io/learnr_app1" scrolling="no" frameborder="no"></iframe>
-
-<!---------------->
 
 ## RStudio Workflow
 
@@ -40,9 +35,3 @@ Science is a multifaceted process that involves designing experiments or observa
 # Project Management with RStudio {#1.3_project_management}
 
 # Getting Help {#1.4_getting_help}
-
-
-
-<script>
-  iFrameResize({}, ".interactive");
-</script>
