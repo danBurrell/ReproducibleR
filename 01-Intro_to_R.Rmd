@@ -1,4 +1,4 @@
-# Setting Up {#1.1_setup}
+# Setting Up {#setup}
 
 Science is a multifaceted process that involves designing experiments or observational studies, collecting data and analyzing that data to gain insight into substantive research problems and to derive conclusions. 
 
@@ -16,6 +16,27 @@ Science is a multifaceted process that involves designing experiments or observa
 ## RStudio Workflow
 
 ## Introduction to R
+
+R is an environment for statistical computing, data analysis and data visualization. It's built on the R scripting language that's based on the statistical language S developed by John Chambers and others at Bell Laboratories (formerly AT&T, now Lucent Technologies). Unlike S, which is sold commercially as S-Plus, R was developed by Robert Gentleman and Ross Ihaka as free software under the Free Software Foundation's GNU General Public License. R (GNU S) is available across all common platforms: most UNIX and Linux platforms, Windows and MacOS. Because it is free to use and alter, there is a huge variety of third-party contributed packages that increase the scope and functionality of what can be done with R.      
+
+### Why use R for 
+
+There are many books teaching R available, but many of them emphasize statistical aspects over and above more computational issues. Norman Matloff's "Art of R Programming" is somewhat unique in this regard, because it places a strong emphasis on R from a computer science perspective as well as a statistical one (Norman is both a computer scientist and a statistician). In his discussion on why R is a good choice he says R is "both inexpensive and beautiful [... so] Why use anything else?". But we've already alluded to several reasons why you should choose R for your statistical and other numerical work:
+
+* R is free and open-source and as the GNU S, is really the standard statistical software used by professional statisticians in government, industry and academia
+* R is available across virtually all commonly used computing platforms and operating systems
+* R is not just for statistics, but is a full-fledged general purpose programming language
+
+In addition to these features that we've already made mention of, other important features include:
+
+* R has a large user community and plenty of avenues for obtaining help
+* R is good at managing data, and especially in conjunction with RStudio and Rmarkdown, it is excellent for managing projects and for publishing outputs
+* R combines nice features of functional and object-oriented programming languages, which makes it ideal for flexible implementation of methods
+* R is flexible and powerful - often more so than "comparable" commercial products such as SPSS, GenStat and SPSS (especially where it counts: user fine control and programmability, available packages and functions )  
+
+### Object-oriented Programming and Functional Programming
+
+It is not my intention to delve heavily into these concepts --- this is not a text on computer science --- but I do feel it is important to have "just enough" of an understanding of some computational issues that set R apart. We have mentioned that R has features of objected oriented programming languages and functional programming languages. In R, object orientation essentially means that everything in R is an object. Again, borrowing from Matloff (2017), the advantages of object orientation are readily understood via a simple example. In GenStat or SPSS, for example, we might run a linear mixed model analysis by importing data from a spreadsheet and then using the menu-driven system to select the analysis we want to perform. The results are then printed out to an output window and sometimes there's a lot of results. R is different because everything is an object, meaning that not only is the imported data stored as a data frame object (i.e. an object of class `data.frame`), but the results of running a mixed model analysis using, say, `lmer()`, are stored as a mixed-effects model object (i.e. an object of class `merMod` and subclass `lmerMod`). The advantage of this is that the output can be assigned to a variable name and then we can access only the parts of the output that are needed for subsequent computations, avoiding all that messy output. Output is not fundamentally different from data, and we can perform computations on the output from a model as easily as we can perform computations on data. This opens up the next brilliant thing about R, it uses polymorphic functions, which is a fancy way of saying that I can fit a bunch of different classes of statistical models and access, for example, diagnostic plots for that particular class through a single generic function, such as `plot()`. Different models have different diagnostic plots that are useful, but R automatically determines what kind of model it is, and produce the correct output from `plot()` by linking to the input object's class methods.     
 
 ### Using R as a glorified caclulator
 
